@@ -2,4 +2,3 @@ requests
 geopy
 ollama
 streamlit
-subprocess
