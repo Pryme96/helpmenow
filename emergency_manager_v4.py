@@ -143,7 +143,7 @@ def handle_location_query(user_query, dataset):
 
 # Interfaccia Streamlit
 def main():
-    st.title("Chatbot di Emergenza con LLAMA")
+    st.title("HelpMeNow - Chatbot di Emergenza con LLAMA")
     st.write("Inserisci la tua domanda relativa a emergenze mediche, naturali o punti di raccolta.")
     
     user_query = st.text_input("Digita la tua domanda qui:")
