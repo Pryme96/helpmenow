@@ -34,6 +34,7 @@ def ask_ollama(prompt):
         response = ollama.generate(model=model_name, prompt=full_prompt)
         return response.response.strip()
     except Exception as e:
+        st.write(e)
         return f"Errore durante l'interrogazione del modello: {e}"
 
 # Funzione per ottenere coordinate con OpenStreetMap (Nominatim)
