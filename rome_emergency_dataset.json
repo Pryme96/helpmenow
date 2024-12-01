@@ -1,0 +1,117 @@
+{
+    "points_of_collection": [
+        {
+            "name": "Parco della Resistenza",
+            "address": "Via delle Rimembranze, Quartiere Garbatella, Roma",
+            "gps": "41.8605, 12.4853",
+            "capacity": "500 persone",
+            "services": [
+                "Accesso per disabili",
+                "Acqua potabile",
+                "Servizi igienici"
+            ],
+            "notes": "Aperto 24 ore su 24 durante le emergenze."
+        },
+        {
+            "name": "Piazza Garibaldi",
+            "address": "Piazza Garibaldi, Quartiere Esquilino, Roma",
+            "gps": "41.8955, 12.5014",
+            "capacity": "300 persone",
+            "services": [
+                "Accesso per disabili"
+            ],
+            "notes": "Acqua non disponibile; servizi igienici nelle vicinanze."
+        },
+        {
+            "name": "Centro Sportivo Tor Bella Monaca",
+            "address": "Viale di Tor Bella Monaca 497, Roma",
+            "gps": "41.8741, 12.6136",
+            "capacity": "600 persone",
+            "services": [
+                "Accesso per disabili",
+                "Acqua potabile",
+                "Servizi igienici",
+                "Area coperta"
+            ],
+            "notes": "Disponibile anche per pernottamento in caso di emergenza."
+        }
+    ],
+    "hospitals": [
+        {
+            "name": "Ospedale San Filippo Neri",
+            "address": "Via Giovanni Martinotti 20, Roma",
+            "gps": "41.9503, 12.4457",
+            "phone": "06 33061",
+            "services": [
+                "Pronto soccorso generale",
+                "Unità di terapia intensiva"
+            ],
+            "hours": "24/7",
+            "notes": "Accesso per disabili disponibile."
+        },
+        {
+            "name": "Policlinico Umberto I",
+            "address": "Viale del Policlinico 155, Roma",
+            "gps": "41.9037, 12.5126",
+            "phone": "06 49971",
+            "services": [
+                "Pronto soccorso pediatrico",
+                "Pronto soccorso ostetrico"
+            ],
+            "hours": "24/7",
+            "notes": "Centro di eccellenza per emergenze pediatriche."
+        }
+    ],
+    "emergency_contacts": [
+        {
+            "service": "Numero Unico di Emergenza",
+            "phone": "112",
+            "hours": "24/7",
+            "notes": "Numero unico per emergenze sanitarie, di sicurezza e antincendio."
+        },
+        {
+            "service": "Vigili del Fuoco",
+            "phone": "115",
+            "hours": "24/7",
+            "notes": "Disponibile per incendi, salvataggi e interventi tecnici."
+        },
+        {
+            "service": "Emergenza Sanitaria",
+            "phone": "118",
+            "hours": "24/7",
+            "notes": "Pronto intervento medico e ambulanze."
+        }
+    ],
+    "evacuation_routes": [
+        {
+            "route_name": "Percorso di Evacuazione Centro Storico",
+            "start_gps": "41.8986, 12.4768",
+            "end_gps": "41.9029, 12.4534",
+            "type": "Pedonale",
+            "notes": "Segnaletica luminosa presente lungo il percorso."
+        },
+        {
+            "route_name": "Percorso di Evacuazione Eur",
+            "start_gps": "41.8335, 12.4652",
+            "end_gps": "41.8369, 12.4506",
+            "type": "Veicolare",
+            "notes": "Disponibile solo per auto private in caso di emergenza."
+        }
+    ],
+    "logistic_resources": [
+        {
+            "type": "Magazzino",
+            "location": "Via del Porto Fluviale 5, Roma",
+            "contact": "06 1234567",
+            "capacity": "200 tonnellate",
+            "notes": "Include cibo, acqua e forniture mediche di emergenza."
+        },
+        {
+            "type": "Ambulanza",
+            "location": "Stazione Tiburtina, Roma",
+            "contact": "06 7654321",
+            "capacity": "2 pazienti per ambulanza",
+            "notes": "Disponibile su richiesta tramite il numero di emergenza 118."
+        }
+    ]
+}
