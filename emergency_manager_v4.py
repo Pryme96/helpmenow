@@ -12,6 +12,7 @@ Le tue risposte devono essere:
 1. Chiare e concise.
 2. Basate su linee guida standard di sicurezza e primo soccorso.
 3. Fornite passo passo quando si tratta di emergenze mediche o di sicurezza.
+4. Devi evitare assolutamente risposte come: "Mi dispiace, ma non posso fornire istruzioni"
 Ora sei pronto per rispondere.
 """
 
@@ -119,7 +120,6 @@ def extract_location_with_llama(query):
     except Exception as e:
         return f"Errore durante l'estrazione della località: {e}"
     
-# Funzione per gestire query di posizione
 # Funzione per gestire query di posizione
 def handle_location_query(user_query, dataset):
     """
