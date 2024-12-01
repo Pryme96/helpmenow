@@ -2,6 +2,7 @@ import json
 import requests
 from geopy.distance import geodesic
 import ollama
+import subprocess
 import streamlit as st
 
 # Prompt iniziale per specializzare LLAMA
@@ -14,6 +15,28 @@ Le tue risposte devono essere:
 3. Fornite passo passo quando si tratta di emergenze mediche o di sicurezza.
 Ora sei pronto per rispondere.
 """
+
+# Funzione per avviare il server Ollama
+def start_ollama_server():
+    """
+    Avvia il server Ollama se non è già in esecuzione.
+    """
+    try:
+        # Verifica se Ollama è in esecuzione
+        result = subprocess.run(["ollama", "status"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if "running" not in result.stdout.decode():
+            # Avvia il server Ollama
+            subprocess.Popen(["ollama", "serve"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            st.write("Server Ollama avviato con successo.")
+        else:
+            st.write("Server Ollama è già in esecuzione.")
+    except FileNotFoundError:
+        st.error("Errore: Ollama non è installato o non è nel PATH.")
+    except Exception as e:
+        st.error(f"Errore durante l'avvio del server Ollama: {e}")
+
+# Avvio del server Ollama
+start_ollama_server()
 
 # Funzione per caricare il dataset
 def load_dataset(filename="rome_emergency_dataset.json"):
